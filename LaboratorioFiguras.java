@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class LaboratorioFiguras {
     public static void main(String[] args) {
         // Criando figuras geométricas
@@ -16,8 +18,8 @@ public class LaboratorioFiguras {
         for (FiguraGeometrica figura : figuras) {
             System.out.println(figura.getInfo());
             System.out.println("Detalhes: " + figura.getDetalhes());
-            System.out.printf("Área: %.2f%n", figura.calcularArea());
-            System.out.printf("Perímetro: %.2f%n", figura.calcularPerimetro());
+            System.out.printf(Locale.US, "Área: %.2f%n", figura.calcularArea());
+            System.out.printf(Locale.US, "Perímetro: %.2f%n", figura.calcularPerimetro());
             System.out.println("-----------------------------------");
         }
         
